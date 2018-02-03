@@ -52,4 +52,12 @@ set spell
 inoremap jk <esc>
 "inoremap <esc> <nop>
 
+" Shortcut for copy to clipboard in visual mode using ^C (ctrl+C)
+vnoremap <C+c> "+y
 
+" Shortcut for cut to clipboard in visual mode using ^C (ctrl+C)
+vnoremap <C+d> "+d
+
+" Shortcut to paste from clipboard in insert mode using ^V (ctrl+V)
+inoremap <C+v> <esc>"+pa
+" Use p to paste in normal mode
